@@ -36,7 +36,7 @@
     },
 	"overrides": [
 		{
-			"files": [ "**/*.jsx", "**/*.tsx", "client/**/*.js" ],
+			"files": [ "**/*.jsx", "**/*.tsx", "client/src/**/*.js" ],
 			"parserOptions": { 
 				"sourceType": "module" 
 			}
