@@ -1,38 +1,23 @@
 {
-	"name": "intertia",
-	"version": "1.2.0",
-	"description": "A web proxy for unblocking websites",
-	"main": "server.js",
-	"directories": {
-		"lib": "lib"
-	},
-	"dependencies": {
-		"@oclif/command": "^1.8.0",
-		"cli-ux": "^5.5.1",
-		"debug": "^4.3.1",
-		"execa": "^5.0.0",
-		"fs-extra": "^10.0.0",
-		"jsdom": "^16.5.0",
-		"netrc-parser": "^3.1.6",
-		"prettier": "^2.4.1",
-		"tld-enum": "^2.0.6",
-		"tslib": "^2.2.0",
-		"uuid": "^8.3.2",
-		"ws": "^7.4.4"
-	},
-	"scripts": {
-		"cli:format": "prettier --config ./.prettierrc --ignore-path ./.prettierignore --write .",
-		"start": "node server.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/dragonBall561/unblocked-sites.git"
-	},
-	"keywords": [],
-	"author": "Angad Tendulkar",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/dragonBall561/unblocked-sites/issues"
-	},
-	"homepage": "https://github.com/dragonBall561/unblocked-sites/blob/main/README.md"
+  "name": "inertia",
+  "version": "1.0.0",
+  "description": "A simple web proxy",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "eslint --config .eslintrc.json .",
+    "fix": "eslint --fix --config .eslintrc.json ."
+  },
+  "repository": "https://github.com/TheAlphaReturns/inertia",
+  "author": "Angad Tendulkar <angad.tendulkar@gmail.com>",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "eslint-plugin-html": "^6.2.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-plugin-react": "^7.28.0"
+  }
 }
